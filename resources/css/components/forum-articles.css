@@ -1,0 +1,17 @@
+
+/* --------------- Forum Articles --------------- */
+.forum-articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    box-sizing: border-box;
+}
+
+
+/* --------------- Adaptation aux écrans --------------- */
+@media screen and (max-width:1000px) {
+    .forum-articles {
+        flex-direction: column;
+    }
+}
+

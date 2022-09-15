@@ -1,0 +1,15 @@
+
+/* --------------- Bouton --------------- */
+.bouton {
+    max-width: 300px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid var(--orange);
+    border-radius: 20px;
+}
+
+.bouton:hover {
+    border-color: var(--white);
+}
+

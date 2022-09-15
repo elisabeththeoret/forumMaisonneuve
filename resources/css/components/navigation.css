@@ -1,0 +1,51 @@
+
+/* --------------- Navigation --------------- */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    background-color: var(--orange);
+}
+
+.liens-nav,
+.boutons-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navigation a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navigation a {
+    background-color: inherit;
+    border-top: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+}
+
+.navigation a:hover {
+    border-top: 3px solid var(--white);
+    border-bottom: 3px solid var(--white);
+}
+
+.navigation .bouton-nav {
+    color: var(--black);
+    background-color: var(--white);
+    border-top: 3px solid var(--white);
+    border-bottom: 3px solid var(--white);
+}
+
+.navigation .bouton-nav:hover {
+    background-color: var(--blue);
+    border-top: 3px solid var(--blue);
+    border-bottom: 3px solid var(--blue);
+}
+

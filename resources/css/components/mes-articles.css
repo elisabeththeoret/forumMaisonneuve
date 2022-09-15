@@ -1,0 +1,68 @@
+
+/* --------------- Contenu de la section --------------- */
+.aucun-article {
+    flex: 1;
+    font-size: 1.5em;
+    padding: 20px;
+    border: 1px solid var(--blue);
+    border-radius: 20px;
+}
+
+
+/* --------------- Mes articles --------------- */
+.mes-articles {
+    flex: 1;
+    max-width: unset;
+    min-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.mes-articles>.carte-article p {
+    padding-bottom: 30px;
+}
+
+.navigation-article {
+    display: flex;
+    align-items: center;
+    min-height: 4rem;
+    border: 1px solid var(--orange);
+    border-top: none;
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
+}
+
+.navigation-article>* {
+    min-height: inherit;
+    width: 100%;
+    flex: 1;
+}
+
+.navigation-article .bouton-article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: inherit;
+    width: 100%;
+    background-color: var(--black);
+}
+
+.navigation-article .bouton-article:hover {
+    background-color: var(--orange);
+}
+
+
+/* --------------- Adaptation aux écrans --------------- */
+@media screen and (max-width:1700px) {
+    .mes-articles {
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .mes-articles {
+        max-width: 100%;
+    }
+}
+

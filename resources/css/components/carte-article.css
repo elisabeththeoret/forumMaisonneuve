@@ -1,0 +1,69 @@
+
+/* --------------- Carte d'article --------------- */
+.carte-article {
+    flex: 1;
+    max-width: unset;
+    min-width: 800px;
+    border: 1px solid var(--blue);
+    border-radius: 20px;
+}
+
+.carte-article {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.carte-article>*+* {
+    margin-top: 20px;
+}
+
+.carte-article>* {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.carte-article>header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: var(--black);
+    background-color: var(--blue);
+}
+
+.carte-article .date {
+    font-size: 1em;
+}
+
+.carte-article>p {
+    flex: 1;
+}
+
+.carte-article>footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: .875em;
+    font-style: italic;
+}
+
+.carte-article .ecrit-par {
+    padding: 10px;
+    border-top: .5px solid var(--orange);
+}
+
+
+/* --------------- Adaptation aux écrans --------------- */
+@media screen and (max-width:1700px) {
+    .carte-article {
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .carte-article {
+        max-width: 100%;
+    }
+}
+

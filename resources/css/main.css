@@ -1,0 +1,145 @@
+/* --------------- Importation --------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './components/bouton.css';
+@import './components/navigation.css';
+@import './components/forum-articles.css';
+@import './components/mes-articles.css';
+@import './components/carte-article.css';
+@import './components/formulaire.css';
+
+
+/* --------------- Règles génériques de base --------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Couleurs */
+html {
+    --orange: #ff661f;
+    --blue: #6fcdff;
+    --green: #8ad6a2;
+    --black: #272727;
+    --darker: #202020;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+a {
+    font-size: 1.25em;
+    font-weight: 300;
+    text-decoration: none;
+    color: inherit;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.125;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1em;
+    max-width: 80ch;
+}
+
+
+/* --------------- Entete de page --------------- */
+body>header {
+    padding: 20px;
+    background-color: var(--darker);
+}
+
+
+/* --------------- Conteneur principal --------------- */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 20px;
+    min-height: 70vh;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+
+/* --------------- Pied de page --------------- */
+body>footer {
+    padding: 20px;
+    padding-top: 80px;
+    font-size: 0.875em;
+    text-align: center;
+    bottom: 0;
+}
+
+
+/* --------------- Formulaire --------------- */
+form,
+input,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+form>* {
+    width: 100%;
+}
+
+fieldset {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+}
+
+label {
+    font-size: 1.375em;
+}
+
+input[type="submit"] {
+    padding: 20px;
+    font-size: 1.25em;
+    cursor: pointer;
+    border: none;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+textarea {
+    resize: vertical;
+    overflow: auto;
+}
+

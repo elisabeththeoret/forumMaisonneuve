@@ -1,0 +1,27 @@
+
+/* --------------- Formulaire pour se créer un compte --------------- */
+.formulaire input,
+.formulaire textarea,
+.formulaire input:-internal-autofill-selected {
+    background-color: inherit;
+    border: 1px solid var(--blue);
+    padding: 10px;
+}
+
+.formulaire input:focus,
+.formulaire textarea:focus {
+    outline: none;
+    background-color: var(--darker);
+    border: 1px solid var(--black);
+    border-bottom: 1px solid var(--orange);
+}
+
+.formulaire input[type="submit"] {
+    border: 1px solid var(--orange);
+    border-radius: 20px;
+}
+
+.formulaire input[type="submit"]:hover {
+    border: 1px solid var(--white);
+}
+
