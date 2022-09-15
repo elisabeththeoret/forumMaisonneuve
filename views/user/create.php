@@ -1,3 +1,4 @@
+<small>Déja un compte? <a href="index.php?module=user&action=login" class="annuler">Connectez-vous</a></small>
 <h1>Créer un compte</h1>
 <form action="index.php?module=user&action=insert" method="post" class="formulaire">
     <fieldset>

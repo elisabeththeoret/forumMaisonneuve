@@ -1,3 +1,4 @@
+<a href="index.php?module=user&action=index" class="annuler">Annuler</a>
 <h1>Modifier l'article</h1>
 <form action="index.php?module=forum&action=update" method="post" class="formulaire">
     <input type="hidden" name="forumId" value="<?= $data['forumId'] ?>">

@@ -1,3 +1,4 @@
+<small>Pas de compte? <a href="index.php?module=user&action=create" class="annuler">Créez un compte</a></small>
 <h1>Se connecter</h1>
 <span class="message"><?= $data ?></span>
 <form action="?module=user&action=authentificate" method="post" class="formulaire">
