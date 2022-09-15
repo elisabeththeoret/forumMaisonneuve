@@ -1,0 +1,11 @@
+
+/* --------------- Lien annuler --------------- */
+.annuler {
+    font-size: .875rem;
+    color: var(--blue);
+}
+
+.annuler:hover {
+    color: var(--orange);
+}
+
